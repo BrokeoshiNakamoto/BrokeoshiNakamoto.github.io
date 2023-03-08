@@ -1,394 +1,118 @@
 time,named_entity
-00:00:46, one is discussed here
-00:00:58, one is discussed here
-00:01:09, first is discussed here
-00:01:20, 360 degrees is discussed here
-00:02:30, first is discussed here
-00:02:41, the first date is discussed here
-00:02:41, years is discussed here
-00:02:49, years is discussed here
-00:03:11, Thrones is discussed here
-00:03:51, Manosphere is discussed here
-00:04:28, Every night is discussed here
-00:04:38, six seven years is discussed here
-00:05:28, 22 is discussed here
-00:06:19, 30 grand is discussed here
-00:07:16, Instagram is discussed here
-00:07:29, zero is discussed here
-00:07:42, 60 years ago is discussed here
-00:08:06, one is discussed here
-00:08:18, two is discussed here
-00:08:53, loads loads loads loads is discussed here
-00:09:55, f**k is discussed here
-00:12:25, Lambo is discussed here
-00:12:52, da da da is discussed here
-00:14:04, a million is discussed here
-00:14:25, the next two weeks is discussed here
-00:14:40, today is discussed here
-00:14:57, Tinder is discussed here
-00:15:07, Tinder is discussed here
-00:15:07, Instagram is discussed here
-00:15:18, Instagram is discussed here
-00:15:34, First is discussed here
-00:15:45, Starbucks is discussed here
-00:15:59, Starbucks is discussed here
-00:16:13, Starbucks is discussed here
-00:16:22, James is discussed here
-00:16:28, Starbucks is discussed here
-00:16:36, one is discussed here
-00:16:36, one is discussed here
-00:17:07, one is discussed here
-00:17:18, Starbucks is discussed here
-00:17:28, James Bond is discussed here
-00:17:38, one is discussed here
-00:18:32, Russian is discussed here
-00:19:08, Dan Bilzerian is discussed here
-00:19:39, second is discussed here
-00:19:49, second is discussed here
-00:20:00, Lambo is discussed here
-00:20:11, Instagram is discussed here
-00:20:20, five is discussed here
-00:20:20, five is discussed here
-00:20:33, first is discussed here
-00:21:06, four is discussed here
-00:21:15, Instagram is discussed here
-00:21:25, one is discussed here
-00:21:43, 20 is discussed here
-00:21:55, two is discussed here
-00:22:28, Democrat is discussed here
-00:23:07, five years old is discussed here
-00:23:15, G. is discussed here
-00:23:26, six months ago is discussed here
-00:23:46, Instagram is discussed here
-00:23:58, 30 is discussed here
-00:24:12, LOL is discussed here
-00:24:22, LOL is discussed here
-00:24:35, LOL is discussed here
-00:24:54, second is discussed here
-00:24:54, London is discussed here
-00:25:07, London is discussed here
-00:25:17, Bucharest is discussed here
-00:26:07, James is discussed here
-00:27:00, 99% is discussed here
-00:28:43, Grand Rapids is discussed here
-00:28:56, Grand Rapids is discussed here
-00:29:32, 30 is discussed here
-00:29:42, 20 is discussed here
-00:29:42, 20 is discussed here
-00:30:05, 23 is discussed here
-00:30:05, 23 is discussed here
-00:30:28, about a minute is discussed here
-00:30:45, 30 is discussed here
-00:30:57, this about minute minute and a half is discussed here
-00:31:05, six is discussed here
-00:31:14, Instagram is discussed here
-00:31:36, only one is discussed here
-00:31:46, Instagram is discussed here
-00:31:57, Instagram is discussed here
-00:32:10, Instagram is discussed here
-00:32:22, about 100 is discussed here
-00:32:47, 30 is discussed here
-00:32:58, Jesus is discussed here
-00:33:10, second is discussed here
-00:33:21, about two minutes is discussed here
-00:33:35, two minutes is discussed here
-00:33:59, two minutes is discussed here
-00:34:22, FDB is discussed here
-00:34:34, Ignore is discussed here
-00:34:47, FDB is discussed here
-00:35:08, about 70% is discussed here
-00:35:39, WhatsApp is discussed here
-00:35:52, one is discussed here
-00:36:02, FDB is discussed here
-00:36:13, 10 minutes is discussed here
-00:36:20, Bang is discussed here
-00:36:31, about 30,000 is discussed here
-00:36:42, 2 is discussed here
-00:36:54, Cicero is discussed here
-00:37:05, Cicero is discussed here
-00:37:22, Cicero is discussed here
-00:37:34, six is discussed here
-00:37:49, Bucharest is discussed here
-00:39:00, one is discussed here
-00:39:18, 30 is discussed here
-00:39:36, PhD is discussed here
-00:40:03, 30 is discussed here
-00:40:14, 30 is discussed here
-00:40:33, da da da is discussed here
-00:41:19, WhatsApp is discussed here
-00:41:44, WhatsApp is discussed here
-00:42:08, 30 is discussed here
-00:42:22, One is discussed here
-00:42:30, 22 is discussed here
-00:42:51, two or three is discussed here
-00:44:01, 200 is discussed here
-00:44:18, PhD is discussed here
-00:44:27, Kiev is discussed here
-00:44:27, G. is discussed here
-00:44:37, G. is discussed here
-00:45:05, one is discussed here
-00:45:20, fucking weeks is discussed here
-00:45:31, only one is discussed here
-00:45:52, Starbucks is discussed here
-00:46:50, first is discussed here
-00:47:01, Starbucks is discussed here
-00:47:15, Starbucks is discussed here
-00:47:55, a day day and a half is discussed here
-00:48:07, Instagram is discussed here
-00:48:15, six months later is discussed here
-00:48:25, first is discussed here
-00:49:07, one is discussed here
-00:50:12, night is discussed here
-00:50:31, night is discussed here
-00:50:57, night is discussed here
-00:51:06, the day is discussed here
-00:51:24, first is discussed here
-00:51:48, night is discussed here
-00:51:59, two days is discussed here
-00:52:08, a week is discussed here
-00:52:39, next year is discussed here
-00:52:57, three weeks is discussed here
-00:53:05, three weeks is discussed here
-00:53:17, second is discussed here
-00:53:42, FDB is discussed here
-00:54:26, six months is discussed here
-00:54:34, today is discussed here
-00:54:45, night is discussed here
-00:55:03, 2019 is discussed here
-00:55:14, Earth is discussed here
-00:55:24, the day is discussed here
-00:55:53, quarter past one is discussed here
-00:56:04, the day is discussed here
-00:56:14, 30 is discussed here
-00:56:14, 30 minutes is discussed here
-00:56:29, G. is discussed here
-00:56:47, night is discussed here
-00:57:02, two nights is discussed here
-00:57:22, two days is discussed here
-00:57:40, tomorrow is discussed here
-00:57:55, zero is discussed here
-00:58:07, first is discussed here
-00:58:38, another couple days is discussed here
-00:58:49, Aggression is discussed here
-00:59:02, three day is discussed here
-00:59:56, five hours is discussed here
-01:00:15, first is discussed here
-01:00:25, the first date is discussed here
-01:00:37, the first date is discussed here
-01:00:49, Tristan is discussed here
-01:00:49, Tristan is discussed here
-01:01:03, creepy is discussed here
-01:01:13, one is discussed here
-01:01:22, a couple weeks later is discussed here
-01:01:35, Tristan is discussed here
-01:01:59, 10s is discussed here
-01:02:09, 10 is discussed here
-01:02:33, first is discussed here
-01:02:57, 15 minutes is discussed here
-01:03:06, hours is discussed here
-01:03:15, 45 minutes is discussed here
-01:03:15, bang is discussed here
-01:03:25, bang is discussed here
-01:03:46, creepy is discussed here
-01:04:14, first is discussed here
-01:04:21, creepy is discussed here
-01:04:30, all night is discussed here
-01:04:42, LOL is discussed here
-01:04:51, a couple days is discussed here
-01:05:41, one is discussed here
-01:06:04, Tristan is discussed here
-01:06:19, Tristan is discussed here
-01:06:30, Andrew is discussed here
-01:06:39, creepy is discussed here
-01:07:02, Tristan is discussed here
-01:07:12, Twitter is discussed here
-01:08:08, monotony is discussed here
-01:08:08, the last date is discussed here
-01:08:35, the end of the date is discussed here
-01:08:45, the day is discussed here
-01:09:07, 930 is discussed here
-01:09:16, 1230 is discussed here
-01:09:28, 45 minutes is discussed here
-01:10:10, Miami is discussed here
-01:10:19, Miami is discussed here
-01:11:10, Trump is discussed here
-01:11:33, Samsung is discussed here
-01:11:43, Samsung is discussed here
-01:11:53, three is discussed here
-01:11:59, FDB is discussed here
-01:12:10, two is discussed here
-01:12:20, Lambo is discussed here
-01:12:30, WhatsApp is discussed here
-01:13:24, BPD is discussed here
-01:13:32, BPD is discussed here
-01:13:42, 16 years old is discussed here
-01:13:59, BPD is discussed here
-01:14:10, BPD is discussed here
-01:14:19, BPD is discussed here
-01:15:23, second is discussed here
-01:15:50, a hundred is discussed here
-01:16:18, first is discussed here
-01:16:46, thousand is discussed here
-01:16:59, thousand is discussed here
-01:17:11, three is discussed here
-01:17:34, five is discussed here
-01:17:45, three is discussed here
-01:17:54, three is discussed here
-01:18:02, late at night is discussed here
-01:18:19, nearly zero is discussed here
-01:19:13, first is discussed here
-01:19:24, first is discussed here
-01:19:38, first is discussed here
-01:19:54, zero is discussed here
-01:20:13, FDB is discussed here
-01:20:35, Starbucks is discussed here
-01:20:54, second is discussed here
-01:21:09, second is discussed here
-01:21:09, night is discussed here
-01:21:33, night is discussed here
-01:22:27, The next day is discussed here
-01:23:29, the next day is discussed here
-01:23:40, first is discussed here
-01:24:29, Christian is discussed here
-01:25:03, tonight is discussed here
-01:25:14, Christian is discussed here
-01:25:25, Third day is discussed here
-01:25:33, first is discussed here
-01:25:46, three weeks later is discussed here
-01:25:58, ten is discussed here
-01:26:09, Next day is discussed here
-01:26:21, first is discussed here
-01:26:32, first is discussed here
-01:27:33, two years is discussed here
-01:27:42, two years is discussed here
-01:27:51, two is discussed here
-01:28:04, the first night is discussed here
-01:28:15, first is discussed here
-01:29:56, four years is discussed here
-01:30:29, Instagram is discussed here
-01:30:45, one is discussed here
-01:31:01, years is discussed here
-01:31:11, Christian is discussed here
-01:31:58, PhD is discussed here
-01:32:29, Jessica is discussed here
-01:32:55, six years is discussed here
-01:33:43, six months is discussed here
-01:33:53, Instagram is discussed here
-01:34:07, five months is discussed here
-01:34:44, one day is discussed here
-01:34:57, blah blah blah is discussed here
-01:35:08, only one is discussed here
-01:35:16, Trump is discussed here
-01:35:29, one is discussed here
-01:35:42, zero is discussed here
-01:35:55, couple days is discussed here
-01:36:25, FDB is discussed here
-01:36:45, three months is discussed here
-01:37:26, one is discussed here
-01:37:36, one is discussed here
-01:37:44, first is discussed here
-01:37:53, a week from now is discussed here
-01:38:15, another hour and a half is discussed here
-01:38:31, one is discussed here
-01:38:43, these three hours is discussed here
-01:38:55, PhD is discussed here
-01:39:25, last night is discussed here
-01:39:47, one o'clock is discussed here
-01:40:25, FDB is discussed here
-01:41:02, two is discussed here
-01:41:13, two is discussed here
-01:41:21, first is discussed here
-01:42:34, last night is discussed here
-01:43:06, Today is discussed here
-01:43:16, one is discussed here
-01:43:39, her second date is discussed here
-01:44:16, da da da is discussed here
-01:44:25, FDB is discussed here
-01:44:37, PhD is discussed here
-01:44:44, FDB is discussed here
-01:45:04, two is discussed here
-01:45:12, second is discussed here
-01:46:12, two is discussed here
-01:46:30, first is discussed here
-01:46:52, six years is discussed here
-01:47:05, six years is discussed here
-01:47:28, Vivian is discussed here
-01:47:46, two is discussed here
-01:47:53, two is discussed here
-01:48:19, Vivian is discussed here
-01:48:41, Vivian is discussed here
-01:48:56, Jenny is discussed here
-01:49:06, Vivian is discussed here
-01:49:13, FDB is discussed here
-01:49:26, Vivian is discussed here
-01:49:35, one is discussed here
-01:49:44, Vivian is discussed here
-01:49:54, England is discussed here
-01:50:16, Vivian is discussed here
-01:50:24, a couple weeks is discussed here
-01:50:33, Vivian is discussed here
-01:50:43, one is discussed here
-01:50:52, FDB is discussed here
-01:51:00, Jenny is discussed here
-01:51:09, FDB is discussed here
-01:51:21, Vivian is discussed here
-01:51:46, last night is discussed here
-01:52:07, tomorrow is discussed here
-01:52:15, first is discussed here
-01:52:32, Vivian is discussed here
-01:52:43, Vivian is discussed here
-01:53:24, Trains is discussed here
-01:53:33, creepy is discussed here
-01:54:33, PhD is discussed here
-01:54:43, Instagram is discussed here
-01:54:53, four is discussed here
-01:55:21, four or is discussed here
-01:55:38, Five is discussed here
-01:56:00, FDB is discussed here
-01:56:10, Everything's is discussed here
-01:56:31, first is discussed here
-01:56:52, WhatsApping is discussed here
-01:57:34, G. is discussed here
-01:57:49, 100% is discussed here
-01:59:00, One second is discussed here
-01:59:48, another three hours is discussed here
-02:00:25, five to six minutes is discussed here
-02:00:36, Five to six minutes is discussed here
-02:01:07, about 20 minutes, 30 minutes is discussed here
-02:01:16, four in the morning is discussed here
-02:01:55, Instagram is discussed here
-02:02:12, first is discussed here
-02:02:23, tonight is discussed here
-02:02:36, tonight is discussed here
-02:02:50, FDB is discussed here
-02:03:23, first is discussed here
-02:03:33, second is discussed here
-02:03:42, Tristan Tate is discussed here
-02:04:12, apps is discussed here
-02:04:12, apps is discussed here
-02:04:46, WhatsApp is discussed here
-02:04:56, One is discussed here
-02:05:04, late night is discussed here
-02:05:04, Andreas is discussed here
-02:05:12, Andrea is discussed here
-02:05:12, 6 is discussed here
-02:05:22, every 6 months is discussed here
-02:05:22, First is discussed here
-02:05:33, First is discussed here
-02:05:40, number one is discussed here
-02:05:53, three or four is discussed here
-02:06:03, every two weeks is discussed here
-02:06:12, five o'clock is discussed here
-02:06:22, three is discussed here
-02:06:29, three hours is discussed here
-02:06:52, those nine days is discussed here
-02:07:22, 20 is discussed here
-02:07:35, Christian is discussed here
-02:07:59, 6 months is discussed here
-02:08:10, Marbella is discussed here
-02:08:22, Marbella is discussed here
-02:08:35, New York City is discussed here
-02:08:45, New York City is discussed here
-02:08:58, Bucharest is discussed here
-02:09:12, every single day is discussed here
-02:09:27, the Tonino Lamborghini is discussed here
+00:00:00, Andrew Tate is discussed here
+00:00:10, OnlyFans is discussed here
+00:00:19, Tate is discussed here
+00:00:27, OnlyFans is discussed here
+00:00:37, OnlyFans is discussed here
+00:00:46, first is discussed here
+00:01:41, two is discussed here
+00:01:50, One is discussed here
+00:02:06, OnlyFans is discussed here
+00:02:16, OnlyFans is discussed here
+00:02:26, OnlyFans is discussed here
+00:02:50, Instagram is discussed here
+00:03:01, 20,000 is discussed here
+00:03:09, OnlyFans is discussed here
+00:03:20, Pimpin is discussed here
+00:03:49, OnlyFans is discussed here
+00:03:56, OnlyFans is discussed here
+00:04:04, OnlyFans is discussed here
+00:04:13, three is discussed here
+00:04:21, OnlyFans is discussed here
+00:04:29, OnlyFans is discussed here
+00:05:00, 20 is discussed here
+00:05:32, first is discussed here
+00:05:46, OnlyFans is discussed here
+00:05:55, OnlyFans is discussed here
+00:06:25, da da da da da is discussed here
+00:06:40, Canada is discussed here
+00:06:47, one is discussed here
+00:06:56, OnlyFans is discussed here
+00:07:07, one is discussed here
+00:07:59, monthly is discussed here
+00:08:11, first is discussed here
+00:08:28, Vivi is discussed here
+00:08:36, 20,30 dollars is discussed here
+00:08:51, 30 is discussed here
+00:09:02, 12 dollars is discussed here
+00:09:32, summer is discussed here
+00:09:40, 12 is discussed here
+00:09:40, 12 is discussed here
+00:09:57, summer is discussed here
+00:10:20, Twitter is discussed here
+00:10:43, OnlyFans is discussed here
+00:11:14, OnlyFans is discussed here
+00:11:21, OnlyFans is discussed here
+00:11:37, Twitter is discussed here
+00:11:45, Twitter is discussed here
+00:11:54, OnlyFans is discussed here
+00:12:03, OnlyFans is discussed here
+00:12:15, Bang is discussed here
+00:12:24, Twitter is discussed here
+00:12:34, Twitter is discussed here
+00:12:43, OnlyFans is discussed here
+00:12:52, between six and fifteen dollars is discussed here
+00:13:01, 500 is discussed here
+00:13:08, OnlyFans is discussed here
+00:13:22, a later date is discussed here
+00:13:43, one is discussed here
+00:14:03, today is discussed here
+00:14:11, OnlyFans is discussed here
+00:14:32, 10 is discussed here
+00:14:56, Hussars University is discussed here
+00:15:07, one is discussed here
+00:15:47, second is discussed here
+00:15:57, 24 hours is discussed here
+00:16:08, 24 hours is discussed here
+00:17:00, 24 hours is discussed here
+00:17:11, OnlyFans is discussed here
+00:17:36, monthly is discussed here
+00:17:50, five bucks is discussed here
+00:18:22, first is discussed here
+00:18:31, Hustlers University is discussed here
+00:18:39, one is discussed here
+00:18:39, first is discussed here
+00:18:50, first is discussed here
+00:19:06, all day is discussed here
+00:19:29, DM is discussed here
+00:19:39, 24 hours is discussed here
+00:19:39, 10 is discussed here
+00:19:49, 10 is discussed here
+00:20:33, DMing is discussed here
+00:21:02, OnlyFans is discussed here
+00:21:35, Ten is discussed here
+00:21:57, Hustlers University is discussed here
+00:22:30, DM is discussed here
+00:22:37, bang is discussed here
+00:23:54, Bang is discussed here
+00:24:06, three bucks is discussed here
+00:24:18, 20% is discussed here
+00:24:31, 60% is discussed here
+00:24:56, OnlyFans is discussed here
+00:25:08, OnlyFans is discussed here
+00:25:19, a later date is discussed here
+00:25:33, 24 is discussed here
+00:25:49, 24 hours is discussed here
+00:26:02, 12 is discussed here
+00:26:11, 20 is discussed here
+00:26:23, OnlyFans is discussed here
+00:26:23, half is discussed here
+00:26:37, half is discussed here
+00:26:45, OnlyFans is discussed here
+00:27:05, tomorrow is discussed here
+00:27:05, hours is discussed here
+00:27:26, five is discussed here
+00:27:35, OnlyFans is discussed here
+00:28:00, 50 is discussed here
+00:28:12, two dollars is discussed here
+00:28:33, OnlyFans is discussed here
+00:28:42, Lara Croft is discussed here
+00:28:53, Lara Croft is discussed here
+00:29:03, OnlyFans is discussed here
+00:29:14, 10% is discussed here
+00:29:22, 1% is discussed here
+00:29:48, OnlyFans is discussed here
+00:29:56, OnlyFans is discussed here
+00:30:23, Singapore is discussed here
+00:30:34, 10,000 is discussed here
+00:30:53, OnlyFans is discussed here
