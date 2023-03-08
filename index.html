@@ -11,19 +11,13 @@
         padding: 8px;
         text-align: left;
       }
+      h2 {
+        text-align: center;
+      }
     </style>
   </head>
   <body>
-    <!-- <img src="Andrew_Tate_PhD_Course.png" alt="My Image" width="400" height="300">-->
-    <!--<img src="Andrew_Tate_PhD_Course.png" alt="Image description">-->
-
     <h2>The Tate Files</h2>
-    <style>
-    h2 {
-      text-align: center;
-    }
-  </style>
-
     <table id="myTable">
       <thead>
         <tr>
@@ -69,12 +63,16 @@
         return a - b;
       });
 
-      // Update the table with the sorted data
-      dates.forEach(function(date) {
+      // Create a new array of sorted rows
+      var sortedRows = dates.map(function(date) {
         var dateString = date.toLocaleDateString("en-US", { month: "short", year: "numeric" });
-        var row = rows.find(function(row) {
+        return rows.find(function(row) {
           return row.cells[0].textContent.trim() === dateString;
         });
+      });
+
+      // Update the table with the sorted rows
+      sortedRows.forEach(function(row) {
         tbody.appendChild(row);
       });
     </script>
