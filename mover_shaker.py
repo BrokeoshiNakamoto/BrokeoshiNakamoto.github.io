@@ -8,7 +8,6 @@ import os
 from jinja2 import Environment, FileSystemLoader
 from bs4 import BeautifulSoup
 import datetime
-
 class MoverShaker:
 
     def __init__(self,filename,title,video_url):
@@ -19,6 +18,7 @@ class MoverShaker:
         self.title = title
         self.graph_png_url =''
         self.transcript_url =''
+
 
     def moves_files(self):
         """
@@ -73,43 +73,6 @@ class MoverShaker:
         if self.graph_png_url.endswith("_.png"):
             self.graph_png_url = self.graph_png_url[:-6] + ".png"
         print(self.graph_png_url)
-
-
-
-
-    def table_a_updaterX(self):
-        # Define the path to the templates directory
-        template_dir = os.path.join(os.path.dirname(__file__), 'templates')
-
-        # Create a Jinja2 environment object
-        env = Environment(loader=FileSystemLoader(template_dir))
-
-        # Define the data for each row
-        data = [
-            {'date': 'Dec 2022', 'podcast': 'Full Send1', 'transcript_link': 'transcripts/full_send_pod1.html',
-             'video_link': 'https://youtu.be/kJyTkLgW_KI'},
-            {'date': 'Jan 2022', 'podcast': 'Full Send2', 'transcript_link': 'transcripts/full_send_pod2.html',
-             'video_link': 'https://youtu.be/2aDxooMz54M'},
-            {'date': 'Nov 2021', 'podcast': 'Full Send3', 'transcript_link': f'{self.transcript_url}',
-             'video_link': 'https://youtu.be/x_3lS8SIVRI'}
-        ]
-
-        # Get the template and render the HTML
-        template = env.get_template('index.html')
-
-        # Sort the rows by date
-        rows = data
-        rows.sort(key=lambda x: datetime.datetime.strptime(x['date'], '%b %Y'))
-
-        # Render the HTML with the sorted rows
-        html = template.render(rows=rows)
-
-        # Write the updated HTML to a file
-        with open('index.html', 'w') as f:
-            f.write(html)
-
-        # Return the HTML as the response to the user's request
-        return html
 
 
 
@@ -196,16 +159,103 @@ class MoverShaker:
         return str(soup)
 
 
+
+
+    def transcript_page_template(self):
+
+
+        # Define the template with placeholders
+        template = Template('''
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>{{ title }}</title>
+            <meta charset="UTF-8">
+            <style>
+                .back-button {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 10px;
+                    background-color: #f00;
+                    color: #fff;
+                    text-decoration: none;
+                }
+                .video-container {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                }
+                .video {
+                    flex: 1;
+                    margin-right: 20px;
+                }
+                .image-container {
+                    flex: 1;
+                    max-width: 700px;
+                    margin-top: 20px;
+                }
+                .image-container img {
+                    max-width: 100%;
+                    height: auto;
+
+                }
+            </style>
+        </head>
+        <body>
+            <a href="#" class="back-button">Back</a>
+            <div class="video-container">
+                <div class="video">
+                    <iframe width="420" height="345" src="{{ video_url }}"></iframe>
+                </div>
+                <div class="image-container">
+                    <img src="{{ image_url }}" alt="Image">
+                </div>
+            </div>
+            <h1>Transcript</h1>
+            <p></p>
+            <iframe src="{{ transcript_url }}" width="100%" height="500px"></iframe>
+        </body>
+        </html>
+        ''')
+
+        # Define the data to fill in the placeholders
+        data = {
+            'title': self.title,
+            'video_url': self.video_url,
+            'image_url': self.graph_png_url,
+            'transcript_url': self.transcript_url
+        }
+
+        # Render the template with the data
+        html = template.render(data)
+
+        soup = BeautifulSoup(html, 'html.parser')
+
+        # Write the HTML to a file
+        with open(f'transcripts/{self.title[:-6].lower()}.html', 'w') as f:
+            f.write(soup.prettify())
+
+
+
+
+
+
+
+
     def main(self):
         self.moves_files()
-        self.table_a_updater()
+        #self.table_a_updater()
+        self.transcript_page_template()
+
 
 
 
 if __name__ == "__main__":
-    a = MoverShaker(filename="andrew_tate_full_send_pod_1",
-                    title='andrew_tate_full_send_pod_1',
-                    video_url='https://www.youtube.com/embed/y3n7HB03UK8',
+    a = MoverShaker(filename="April_Raid_Interview0",
+                    title='April_Raid_Interview0',
+                    video_url='https://www.youtube.com/embed/4PCK5NzAPUM',
 
                     )
     a.main()
