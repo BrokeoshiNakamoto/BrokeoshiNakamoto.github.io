@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<h1>Search</h1>
+
+<form action="/search" method="get">
+  <label for="q">Search:</label>
+  <input type="text" id="q" name="q" autofocus>
+  <button type="submit">Search</button>
+</form>
+
+{% if site.search_results %}
+  <h2>Search Results</h2>
+  <ul>
+    {% for post in site.search_results %}
+      <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
