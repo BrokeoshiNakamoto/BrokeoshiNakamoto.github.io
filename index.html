@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>The Tate Files</title>
-    <style>
-      table {
+ <head>
+  <title>
+   The Tate Files
+  </title>
+  <style>
+   table {
         border-collapse: collapse;
         width: 100%;
       }
@@ -17,50 +19,114 @@
       .search-bar {
         width: 250px;
       }
-    </style>
-  </head>
-  <body>
-    <div style="text-align: center;">
-      <form action="/search" method="get">
-        <input type="text" name="query" placeholder="Search..." class="search-bar">
-        <button type="submit">Search</button>
-      </form>
-    </div>
-
-    <h2>The Tate Files</h2>
-    <table id="myTable">
-      <thead>
-        <tr>
-          <th>Date</th>
-          <th>Title</th>
-          <th>Transcript</th>
-          <th>Video Link</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Apr 2022</td>
-          <td>Andrew Tate's Final Message</td>
-          <td><a href="transcripts/final_message.html">View Transcript</a></td>
-          <td><a href="https://www.youtube.com/watch?v=SK2tlXFg8tM&t=6s">Watch Video</a></td>
-        </tr>
-        <tr>
-          <td>Dec 2018</td>
-          <td>PhD course</td>
-          <td><a href="transcripts/andrew_tate_phd.html">View Transcript</a></td>
-          <td><a href="https://www.youtube.com/watch?v=htYdpp0LxOE&t=872s">Watch Video</a></td>
-        </tr>
-        <tr>
-          <td>Apr 2020</td>
-          <td>Only Fans Elites FULL Course</td>
-          <td><a href="transcripts/only_fans_elites_full.html">View Transcript</a></td>
-          <td><a href="https://www.youtube.com/watch?v=y3n7HB03UK8&t=529s">Watch Video</a></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <script>
-      // Get the table rows and convert them to an array
+  </style>
+ </head>
+ <body>
+  <div style="text-align: center;">
+   <form action="/search" method="get">
+    <input class="search-bar" name="query" placeholder="Search..." type="text"/>
+    <button type="submit">
+     Search
+    </button>
+   </form>
+  </div>
+  <h2>
+   The Tate Files
+  </h2>
+  <table id="myTable">
+   <thead>
+    <tr>
+     <th>
+      Date
+     </th>
+     <th>
+      Title
+     </th>
+     <th>
+      Transcript
+     </th>
+     <th>
+      Video Link
+     </th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>
+      Nov 2022
+     </td>
+     <td>
+      Full Send Pod1
+     </td>
+     <td>
+      <a href="transcripts/full_send_pod1.html">
+       View Transcript
+      </a>
+     </td>
+     <td>
+      <a href="https://www.youtube.com/watch?v=kJyTkLgW_KI&amp;t=747s">
+       Watch Video
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Apr 2022
+     </td>
+     <td>
+      Andrew Tate's Final Message
+     </td>
+     <td>
+      <a href="transcripts/final_message.html">
+       View Transcript
+      </a>
+     </td>
+     <td>
+      <a href="https://www.youtube.com/watch?v=SK2tlXFg8tM&amp;t=6s">
+       Watch Video
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Apr 2020
+     </td>
+     <td>
+      Only Fans Elites FULL Course
+     </td>
+     <td>
+      <a href="transcripts/only_fans_elites_full.html">
+       View Transcript
+      </a>
+     </td>
+     <td>
+      <a href="https://www.youtube.com/watch?v=y3n7HB03UK8&amp;t=529s">
+       Watch Video
+      </a>
+     </td>
+    </tr>
+    <tr>
+     <td>
+      Dec 2018
+     </td>
+     <td>
+      PhD course
+     </td>
+     <td>
+      <a href="transcripts/andrew_tate_phd.html">
+       View Transcript
+      </a>
+     </td>
+     <td>
+      <a href="https://www.youtube.com/watch?v=htYdpp0LxOE&amp;t=872s">
+       Watch Video
+      </a>
+     </td>
+    </tr>
+   </tbody>
+  </table>
+  <script>
+   // Get the table rows and convert them to an array
       var table = document.getElementById("myTable");
       var tbody = table.getElementsByTagName("tbody")[0];
       var rows = Array.from(tbody.rows);
@@ -85,7 +151,6 @@
       sortedRows.forEach(function(row) {
         tbody.appendChild(row);
       });
-    </script>
-
-  </body>
+  </script>
+ </body>
 </html>
