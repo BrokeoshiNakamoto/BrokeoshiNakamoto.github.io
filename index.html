@@ -14,9 +14,19 @@
       h2 {
         text-align: center;
       }
+      .search-bar {
+        width: 250px;
+      }
     </style>
   </head>
   <body>
+    <div style="text-align: center;">
+      <form action="/search" method="get">
+        <input type="text" name="query" placeholder="Search..." class="search-bar">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
     <h2>The Tate Files</h2>
     <table id="myTable">
       <thead>
