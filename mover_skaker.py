@@ -2,9 +2,12 @@
 Some methods that move source files into place
 """
 import shutil
-import os
 import time
 from jinja2 import Template
+import os
+from jinja2 import Environment, FileSystemLoader
+
+
 
 class MoverShaker:
 
@@ -44,6 +47,15 @@ class MoverShaker:
         html_dst_file = self.VID_DIR.lower()+'/'+self.filename[:-6].lower()+'.html'
         print(html_dst_file)
         shutil.copy(html_src_file, html_dst_file)
+
+        parts = html_dst_file.split('/')
+        self.transcript_url = '/'.join(parts[-2:])
+        """
+        cleaning up the file name 
+        """
+        if self.transcript_url.endswith("_.html"):
+            self.transcript_url = self.transcript_url[:-6] + ".html"
+        print(self.transcript_url)
         """
         copy .png over
         """
@@ -52,7 +64,44 @@ class MoverShaker:
         png_dst_file = self.VID_DIR.lower() + '/' + self.filename[:-6].lower() + '.png'
         print(png_dst_file)
         shutil.copy(png_source_src_file, png_dst_file)
-        self.graph_png_url = png_dst_file
+
+        parts = png_dst_file.split('/')
+        self.graph_png_url = '/'.join(parts[-2:])
+
+        if self.graph_png_url.endswith("_.png"):
+            self.graph_png_url = self.graph_png_url[:-6] + ".png"
+        print(self.graph_png_url)
+
+
+    def table_a_updater(self):
+        """
+        Updates table on index.html
+        """
+
+        # Define the path to the templates directory
+        template_dir = os.path.join(os.path.dirname(__file__), 'templates')
+
+        # Create a Jinja2 environment object
+        env = Environment(loader=FileSystemLoader(template_dir))
+
+        # Define the data for each row
+        data = [
+            {'date': 'Dec 2018', 'course': 'PhD course', 'transcript_link': 'transcripts/andrew_tate_phd.html',
+             'video_link': 'https://www.youtube.com/watch?v=htYdpp0LxOE&t=872s'},
+            # Add more rows here as needed
+        ]
+
+        # Render the template with the data
+        template = env.get_template('table_template.html')
+        html = template.render(rows=data)
+
+        # Return the HTML as the response to the user's request
+        return html
+
+
+
+
+
 
     def transcript_page_template(self):
 
@@ -133,16 +182,18 @@ class MoverShaker:
 
 
 
-    def main(self):
 
-        self.moves_files()
-        self.transcript_page_template()
+    def main(self):
+        pass
+
+        #self.moves_files()
+        #self.transcript_page_template()
 
 
 if __name__ == "__main__":
-    a = MoverShaker(filename="Andrew_Tate_PhD_Course",
-                    title='Andrew_Tate_PhD_Course',
-                    video_url='https://www.youtube.com/embed/htYdpp0LxOE',
+    a = MoverShaker(filename="Only_Fans_Elites_FULL_Course",
+                    title='Only_Fans_Elites_FULL_Course',
+                    video_url='https://www.youtube.com/embed/y3n7HB03UK8',
 
                     )
     a.main()
