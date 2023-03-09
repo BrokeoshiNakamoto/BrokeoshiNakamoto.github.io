@@ -8,14 +8,14 @@ from jinja2 import Template
 
 class MoverShaker:
 
-    def __init__(self,filename,title,video_url,image_url,transcript_url):
+    def __init__(self,filename,title,video_url):
 
         self.filename = filename
         self.VID_DIR = f"transcripts/{filename}"
         self.video_url = video_url
-        self.image_url = image_url
-        self.transcript_url = transcript_url
         self.title = title
+        self.graph_png_url =''
+        self.transcript_url =''
 
     def moves_files(self):
         """
@@ -50,8 +50,9 @@ class MoverShaker:
         png_source_src_file = png_source
         print(png_source_src_file)
         png_dst_file = self.VID_DIR.lower() + '/' + self.filename[:-6].lower() + '.png'
-        print(html_dst_file)
+        print(png_dst_file)
         shutil.copy(png_source_src_file, png_dst_file)
+        self.graph_png_url = png_dst_file
 
     def transcript_page_template(self):
 
@@ -116,7 +117,7 @@ class MoverShaker:
         data = {
             'title': self.title,
             'video_url': self.video_url,
-            'image_url': self.image_url,
+            'image_url': self.graph_png_url,
             'transcript_url': self.transcript_url
         }
 
@@ -124,7 +125,7 @@ class MoverShaker:
         html = template.render(data)
 
         # Write the HTML to a file
-        with open('transcripts/my_page.html', 'w') as f:
+        with open(f'transcripts/{self.title[:-6].lower()}'+'.html', 'w') as f:
             f.write(html)
 
 
@@ -135,13 +136,13 @@ class MoverShaker:
     def main(self):
 
         self.moves_files()
-        #self.transcript_page_template()
+        self.transcript_page_template()
 
 
 if __name__ == "__main__":
     a = MoverShaker(filename="Andrew_Tate_PhD_Course",
                     title='Andrew_Tate_PhD_Course',
-                    video_url='',
-                    image_url='',
-                    transcript_url='')
+                    video_url='https://www.youtube.com/embed/htYdpp0LxOE',
+
+                    )
     a.main()
