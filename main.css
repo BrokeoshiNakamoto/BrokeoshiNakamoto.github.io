@@ -245,7 +245,10 @@ pre[data-line] .line-highlight[data-end]:after {
 .mermaid {
   width: 100% !important;
   max-width: 100% !important;
-  transform: scale(4) !important;
+  transform: scale(2) !important;
   height: auto !important;
+}
+.mermaid text {
+  font-size: 16px !important;
 }
 
