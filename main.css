@@ -242,7 +242,7 @@ pre[data-line] .line-highlight[data-end]:after {
 /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
 
 .mermaid {
- width: 100% !important;
- max-width: 100% !important;
- height: auto !important;
+  width: 150% !important;
+  height: 400px !important;
 }
+
