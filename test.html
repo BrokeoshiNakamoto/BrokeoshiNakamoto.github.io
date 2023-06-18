@@ -4,12 +4,19 @@
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <style>
+        .transaction-link {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
 </head>
 <body for="html-export">
     <div class="mume markdown-preview">
         <div class="mermaid">
             graph LR
-            <a href="https://example.com/transaction" target="_blank">Transaction0[Transaction 4b07b89502160b9282d3585fdaa23cb4464b42a5d84269b3b270d91d40c57cdd]</a>
+            <span class="transaction-link" onclick="openTransaction('4b07b89502160b9282d3585fdaa23cb4464b42a5d84269b3b270d91d40c57cdd')">Transaction0[Transaction 4b07b89502160b9282d3585fdaa23cb4464b42a5d84269b3b270d91d40c57cdd]</span>
             note1 --&gt;|Time: Fri Apr 7 20:35:27 2023| Transaction0
             noteTotalTrans1[Total transactions: 53]
             bc1qnglum7n643auhys7at35sytkpr2t4p6wgk5w9v --&gt; noteTotalTrans1
@@ -18,8 +25,11 @@
 </body>
 
 
-
     <script>
+          function openTransaction(transactionId) {
+        var transactionUrl = "https://example.com/transaction/" + transactionId;
+        window.open(transactionUrl, "_blank");
+    }
 // config mermaid init call
 // http://knsv.github.io/mermaid/#configuration
 //
