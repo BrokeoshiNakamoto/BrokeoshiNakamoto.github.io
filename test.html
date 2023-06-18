@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({startOnLoad:true});</script>
+</head>
+    <body for="html-export" >
+    
+        <div class="mermaid">graph LR
+    Transaction0[Transaction 4b07b89502160b9282d3585fdaa23cb4464b42a5d84269b3b270d91d40c57cdd]
+    Transaction0 --&gt;|13670184760| <a href="https://www.blockchain.com/explorer/transactions/btc/4b07b89502160b9282d3585fdaa23cb4464b42a5d84269b3b270d91d40c57cdd" target="_blank">bc1qnglum7n643auhys7at35sytkpr2t4p6wgk5w9v</a>
+    note1 --&gt;|Time: Fri Apr  7 20:35:27 2023| Transaction0
+    noteTotalTrans1[Total transactions: 53]
+    bc1qnglum7n643auhys7at35sytkpr2t4p6wgk5w9v --&gt; noteTotalTrans1
+
+</div>
+      </div>
+
+
+    </body>
+
+    <script>
+// config mermaid init call
+// http://knsv.github.io/mermaid/#configuration
+//
+// You can edit the 'MERMAID_CONFIG' variable below.
+MERMAID_CONFIG = {
+  startOnLoad: false
+}
+
+if (window['MERMAID_CONFIG']) {
+  window['MERMAID_CONFIG'].startOnLoad = false
+  window['MERMAID_CONFIG'].cloneCssStyles = false
+  window['MERMAID_CONFIG'].theme = "default"
+}
+mermaid.initialize(window['MERMAID_CONFIG'] || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+} else {
+  mermaid.init(null, document.querySelectorAll('.mermaid'))
+}
+</script>
+
+  </html>
