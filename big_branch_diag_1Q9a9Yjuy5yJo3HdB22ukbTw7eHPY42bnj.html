@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction 5346c298fb22a34adca917c23224e73dcf6c1eed330281c3190af051d981206c]
+    Transaction0 -->|80389547| bc1qcjxltl0peee8g3vxjl7lncxs7twgsudp9mdplc
+    note1 -->|Time: Fri Apr  7 21:16:59 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 1]
+    bc1qcjxltl0peee8g3vxjl7lncxs7twgsudp9mdplc --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 14]
+    bc1qcjxltl0peee8g3vxjl7lncxs7twgsudp9mdplc --> noteInboundTrans1
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction1[Transaction 8587571b3ad79db9c1fc293a43b97ca7e2b5ef3f1e2ac97f80f0e4d8b1f418ab]
+    Transaction1 -->|2438619900| 358BhhBQV2Qgb4Jcs3NicHjN3CHMnG8xs7
+    note2 -->|Time: Mon Apr 10 09:52:34 2023| Transaction1
+    class Transaction1 class_Transaction
+    noteOutboundTrans2[Total outbound transactions: 1]
+    358BhhBQV2Qgb4Jcs3NicHjN3CHMnG8xs7 --> noteOutboundTrans2
+    noteInboundTrans2[Total inbound transactions: 1]
+    358BhhBQV2Qgb4Jcs3NicHjN3CHMnG8xs7 --> noteInboundTrans2
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction2[Transaction bf267300871d8151e0c684f966792c54a6d3131df998b8eb285a1b9bf0dc9bfb]
+    Transaction2 -->|2146192349| bc1qe9ldrcz95um5j6tm7lwykyac922dd6hfaagely
+    note3 -->|Time: Mon Apr 10 10:25:22 2023| Transaction2
+    class Transaction2 class_Transaction
+    noteOutboundTrans3[Total outbound transactions: 14]
+    bc1qe9ldrcz95um5j6tm7lwykyac922dd6hfaagely --> noteOutboundTrans3
+    noteInboundTrans3[Total inbound transactions: 15]
+    bc1qe9ldrcz95um5j6tm7lwykyac922dd6hfaagely --> noteInboundTrans3
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>

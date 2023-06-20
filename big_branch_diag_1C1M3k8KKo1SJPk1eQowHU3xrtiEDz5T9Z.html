@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction c2773e9ffd50d4280fc85e66c7303a7bc67e3689c35c6f505f8ac4cc19f3e495]
+    Transaction0 -->|120673895| 17NC9VTPgdWit9EoEDKB5zVwTe394kPTf5
+    note1 -->|Time: Sat Apr  8 01:05:14 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 1]
+    17NC9VTPgdWit9EoEDKB5zVwTe394kPTf5 --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 1]
+    17NC9VTPgdWit9EoEDKB5zVwTe394kPTf5 --> noteInboundTrans1
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction1[Transaction a594704e171b37037fdc71318708b895f66faeef07ea63021313075c7d4b1fac]
+    Transaction1 -->|89676775| 129fH38CqDSUfwNkaVQFxtAfQxButRRECT
+    note2 -->|Time: Sat Apr  8 01:05:14 2023| Transaction1
+    class Transaction1 class_Transaction
+    noteOutboundTrans2[Total outbound transactions: 30]
+    129fH38CqDSUfwNkaVQFxtAfQxButRRECT --> noteOutboundTrans2
+    noteInboundTrans2[Total inbound transactions: 70]
+    129fH38CqDSUfwNkaVQFxtAfQxButRRECT --> noteInboundTrans2
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>
