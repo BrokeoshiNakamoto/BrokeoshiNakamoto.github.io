@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction 0186bcd38eb48a82f4dc3ff760a1559446680924ca87545538b91d0c7a65d5df]
+    Transaction0 -->|415123970| bc1q7gnt87xtlqgpueuaf99vp44f4ekgjt77yuyjj2
+    note1 -->|Time: Sat Apr  8 13:04:15 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 21]
+    bc1q7gnt87xtlqgpueuaf99vp44f4ekgjt77yuyjj2 --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 35]
+    bc1q7gnt87xtlqgpueuaf99vp44f4ekgjt77yuyjj2 --> noteInboundTrans1
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>

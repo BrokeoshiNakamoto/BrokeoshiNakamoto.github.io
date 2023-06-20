@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    noteOutboundTrans0[Total outbound transactions: 1]
+    1J29938cZDMTucML6eVD4ccNmdRMmrQJAV --> noteOutboundTrans0
+    noteInboundTrans0[Total inbound transactions: 1]
+    1J29938cZDMTucML6eVD4ccNmdRMmrQJAV --> noteInboundTrans0
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction 01b68e87d4adca838fef7a215e2e7e8380dc9b65bc1c0b6aeba9aaca1bcd94a1]
+    Transaction0 -->|1597379942| bc1qhjj7zppmhvldjmef8v7feg95j3x8dur6w5ns49
+    note1 -->|Time: Sun Apr  9 15:49:49 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 1]
+    bc1qhjj7zppmhvldjmef8v7feg95j3x8dur6w5ns49 --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 1]
+    bc1qhjj7zppmhvldjmef8v7feg95j3x8dur6w5ns49 --> noteInboundTrans1
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction1[Transaction a033d9301644b12c59f9d50ca2ee00ac3825e7f209bc601bb841c94685bfa4cd]
+    Transaction1 -->|1419787366| bc1qwmw02xkpcjffz9flgvlafe0t8prqt4f78pcgze
+    note2 -->|Time: Mon Apr 10 07:08:45 2023| Transaction1
+    class Transaction1 class_Transaction
+    noteOutboundTrans2[Total outbound transactions: 4]
+    bc1qwmw02xkpcjffz9flgvlafe0t8prqt4f78pcgze --> noteOutboundTrans2
+    noteInboundTrans2[Total inbound transactions: 7]
+    bc1qwmw02xkpcjffz9flgvlafe0t8prqt4f78pcgze --> noteInboundTrans2
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>

@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction 18d16692cbe3d160f5d24d23b230a7c2d39e164bf9019eb23c58853fd76867b7]
+    Transaction0 -->|505950047| bc1qrj4l5se0fgncg63vc9j44vw2cgfvvkfwyjj4dz
+    note1 -->|Time: Tue Apr 11 16:30:46 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 0]
+    bc1qrj4l5se0fgncg63vc9j44vw2cgfvvkfwyjj4dz --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 1]
+    bc1qrj4l5se0fgncg63vc9j44vw2cgfvvkfwyjj4dz --> noteInboundTrans1
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>

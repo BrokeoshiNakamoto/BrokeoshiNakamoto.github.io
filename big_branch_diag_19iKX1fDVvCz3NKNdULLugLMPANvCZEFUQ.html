@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script> <!-- Notice the double braces -->
+</head>
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <div class="mermaid">
+                
+    graph LR
+    
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction0[Transaction 870a67f8c63b89a9fbc591ce85a639b018cadecbcd06641b659c3734a39d1157]
+    Transaction0 -->|319774610| bc1qfpfzy7639t5qgcsmt5tjy0h0cnyyflum3m2ths
+    note1 -->|Time: Sat Apr  8 15:47:29 2023| Transaction0
+    class Transaction0 class_Transaction
+    noteOutboundTrans1[Total outbound transactions: 1]
+    bc1qfpfzy7639t5qgcsmt5tjy0h0cnyyflum3m2ths --> noteOutboundTrans1
+    noteInboundTrans1[Total inbound transactions: 2]
+    bc1qfpfzy7639t5qgcsmt5tjy0h0cnyyflum3m2ths --> noteInboundTrans1
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction1[Transaction 59fdbeed314f27099a0fdd32e9a785420bcbf21f183a17bcc3bb2ad86e78b2d3]
+    Transaction1 -->|232015720| bc1qks2s5tyxevvcnve9k0mn6zspjr0adwfar5r4h5
+    note2 -->|Time: Fri Apr 21 11:21:55 2023| Transaction1
+    class Transaction1 class_Transaction
+    noteOutboundTrans2[Total outbound transactions: 2]
+    bc1qks2s5tyxevvcnve9k0mn6zspjr0adwfar5r4h5 --> noteOutboundTrans2
+    noteInboundTrans2[Total inbound transactions: 2]
+    bc1qks2s5tyxevvcnve9k0mn6zspjr0adwfar5r4h5 --> noteInboundTrans2
+
+    classDef class_Transaction fill:pink,stroke-dasharray:5,5;
+Transaction2[Transaction 87a5c7e4397c303631c5bf2571bc50b920b8483f2644bd1fc3a2f336d096d79d]
+    Transaction2 -->|145169786| bc1qks2s5tyxevvcnve9k0mn6zspjr0adwfar5r4h5
+    note3 -->|Time: Fri Apr 21 19:06:54 2023| Transaction2
+    class Transaction2 class_Transaction
+    
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>
