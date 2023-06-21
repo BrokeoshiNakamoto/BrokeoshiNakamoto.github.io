@@ -288,12 +288,4 @@ pre[data-line] .line-highlight[data-end]:after {
     background-color: rgba(0,0,0,0.4);
 }
 
-table {
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 400px;
-}
-th, td {
-}
 
