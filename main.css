@@ -252,4 +252,12 @@ pre[data-line] .line-highlight[data-end]:after {
   font-size: 16px !important;
 }
 
+.diagram {
+  margin-top: 5%;  /* adjust this percentage value as needed */
+}
+
+.markdown-preview img {
+  margin-top: 5%; /* adjust this value as needed */
+}
+
 
