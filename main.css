@@ -253,11 +253,11 @@ pre[data-line] .line-highlight[data-end]:after {
 }
 
 .diagram {
-  margin-top: 5%;  /* adjust this percentage value as needed */
+  margin-top: 10%;  /* adjust this percentage value as needed */
 }
 
 .markdown-preview img {
-  margin-top: 5%; /* adjust this value as needed */
+  margin-top: 10%; /* adjust this value as needed */
 }
 
 
