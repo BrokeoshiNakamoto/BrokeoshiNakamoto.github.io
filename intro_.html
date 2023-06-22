@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>mermaid.initialize({{startOnLoad:true}});</script>
+    <style>
+        body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+    </style>
+        <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+    </style>
+
+</head>
+<body for="html-export">
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">Stage1</a>
+  <a href="#stage_2">Stage2</a>
+  <a href="#about">About</a>
+</div>
+
+<p>The Bitcoin wallet <a href="https://www.blockchain.com/explorer/addresses/btc/bc1qesjkw9r8mq0n3pk7p7amsfz9mdjpg2kn9yl2v9" target="_blank">'bc1qesjkw9r8mq0n3pk7p7amsfz9mdjpg2kn9yl2v9'</a>, owned by <a href="https://cobratate.com/" target="_blank">'New Era Learning LLC'</a>, is implicated in a series of questionable transactions. These transactions suggest intricate layering and integration stages, typically indicative of money laundering activities, carried out using Bitcoin cryptocurrency.</p>
+<p>On April 6, 2023, at 10:16:40, a considerable sum of 6.80000000 BTC was moved from the wallet <a href="https://www.blockchain.com/explorer/addresses/btc/bc1qesjkw9r8mq0n3pk7p7amsfz9mdjpg2kn9yl2v9" target="_blank">'bc1qesjkw9r8mq0n3pk7p7amsfz9mdjpg2kn9yl2v9'</a> to the wallet <a href="https://www.blockchain.com/explorer/addresses/btc/372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6" target="_blank">'372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6'</a>. This transaction, which was significantly larger than the typical transactions from this wallet, amounted to $204,942 at the time.</p>
+
+<p>The wallet <a href="https://www.blockchain.com/explorer/addresses/btc/372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6" target="_blank">'372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6'</a> then used the received 6.80000000 BTC in transaction ID <a href="https://www.blockchain.com/explorer/transactions/btc/1064e804527cefcadda01b4308d8fef1b817d609c260fe1cb6d397d2d7b2a31d" target="_blank">'1064e804527cefcadda01b4308d8fef1b817d609c260fe1cb6d397d2d7b2a31d'</a>. In this transaction, "372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6" was one of the 61 input wallets involved in a total transaction volume of 278.63521416 BTC, which was worth $8,398,352 at the time of the transaction.</p>
+
+<p>Upon detailed analysis of the transaction flow, it becomes clear that this process involves a series of steps: The transactions begin with a large sum being divided into many smaller fractions, which are then distributed among a high number of output receiving wallets. This seems to be a step in money laundering known as layering, where  confusing webs of transactions are created to frustrate investigation.</p>
+
+<p>As the transactions continue, one can observe a consistent pattern. At each hop, the majority of the funds flow through a single particular wallet. However, a smaller but still significant fraction of the funds is redirected towards the minor branches in each successive transaction. This further supports the suspicion of money laundering activities, as it is a common tactic used to further confuse the transaction trail.</p>
+
+<p>After ten more of such forward transactions, a shift in strategy becomes apparent. In what appears to be the twelfth hop, a modified and complex scheme of layering is employed. This seems to prepare the funds for the final stage of the money laundering process: integration. The diagram provided below refers to the first stage of this layering process as "Stage 1", whilst the second and more complex stage of layering is referred to as "Stage 2". It is at this point that the funds finally reach a point of integration, where they are presumably converted back into regular currency or used for legitimate transactions, thus completing the money laundering process.</p>
+
+<p>The diagram below provides a simplified illustration of the suspected money laundering stages discussed above. Please note that the links titled "Stage 1" and "Stage 2" in the navigation bar will direct you to detailed diagrams. These diagrams present each of these stages in depth, providing references to specific transactions and wallet IDs at each stage.</p>
+
+        <div class="mume markdown-preview">
+            <!-- Add some top margin to the div containing the mermaid diagram -->
+            <div class="mermaid" style="margin-top: 300px;">    
+
+
+    graph LR
+    D[bc1qesjkw9r8mq0n3pk7p7amsfz9mdjpg2kn9yl2v9] --> A((Stage1)) --> B((Stage2)) -->  E[1BCo7JR93Wrg3v3oijzRv4b43A8KR26sZw]
+            </div>
+        </div>
+</body>
+<script>
+    MERMAID_CONFIG = {{
+      startOnLoad: false
+    }}
+
+    if (window['MERMAID_CONFIG']) {{
+    if (window['MERMAID_CONFIG']) {{
+      window['MERMAID_CONFIG'].startOnLoad = false
+      window['MERMAID_CONFIG'].cloneCssStyles = false
+      window['MERMAID_CONFIG'].theme = "default"
+    }}
+    mermaid.initialize(window['MERMAID_CONFIG'] || {})
+    if (typeof(window['Reveal']) !== 'undefined') {{
+      function mermaidRevealHelper(event) {{
+        var currentSlide = event.currentSlide
+        var diagrams = currentSlide.querySelectorAll('.mermaid')
+        for (var i = 0; i < diagrams.length; i++) {{
+          var diagram = diagrams[i]
+          if (!diagram.hasAttribute('data-processed')) {{
+            mermaid.init(null, diagram, ()=> {{
+              Reveal.slide(event.indexh, event.indexv)
+            }})
+          }}
+        }}
+      }}
+      Reveal.addEventListener('slidechanged', mermaidRevealHelper)
+      Reveal.addEventListener('ready', mermaidRevealHelper)
+    }} else {{
+      mermaid.init(null, document.querySelectorAll('.mermaid'))
+    }}
+</script>
+</html>
