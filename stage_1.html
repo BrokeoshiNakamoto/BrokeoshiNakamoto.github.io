@@ -3,12 +3,14 @@
 <head>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
-    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>mermaid.initialize({{startOnLoad:true}});</script>
 </head>
-    </head>
-    <body for="html-export" >
-      <div class="mume markdown-preview  " >
-<div class="mermaid">graph LR
+<body for="html-export">
+        <div class="mume markdown-preview">
+            <!-- Add some top margin to the div containing the mermaid diagram -->
+            <div class="mermaid" style="margin-top: 400px;">
+    
+graph LR
 
     Transaction0[Transaction 150fb44378c692db3f639ad4fb029789094685a1ae0023d1c878fd9c65ae4a7d]
 Transaction0 --&gt;|680000000| 372Rnnmzcaw6My5dJCHy2G4jgHtjESpJx6
