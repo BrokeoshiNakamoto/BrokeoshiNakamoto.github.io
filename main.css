@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;  /* Change this to your preferred width */
+    width: 40%;  /* Change this to your preferred width */
     height: 50%;  /* Change this to your preferred height */
     margin-top: 100px 0;
 }
