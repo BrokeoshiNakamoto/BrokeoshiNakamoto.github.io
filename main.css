@@ -6,12 +6,12 @@ body {
     margin: 0;
 }
 
-
 .mermaid {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px);
+    width: 70%;  /* Change this to your preferred width */
+    height: 50%;  /* Change this to your preferred height */
     margin-top: 100px 0;
 }
 
