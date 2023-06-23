@@ -261,8 +261,11 @@ pre[data-line] .line-highlight[data-end]:after {
 
 
 .mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40%;  /* Change this to your preferred width */
-  height: 50%;  /* Change this to your preferred height */
+  height: 60%;  /* Change this to your preferred height */
   transform: scale(2) !important;
   height: auto !important;
 }
