@@ -12,6 +12,11 @@
             stroke: #fff;
             stroke-width: 1.5px;
         }
+
+        text {
+            font-family: sans-serif;
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>
@@ -19,13 +24,11 @@
         var nodes_data = [
             {id: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", group: 1},
             {id: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", group: 2},
-            {id: "19BquZVHaWK1gZ7TeUCmVTN5hDyPZDheJh", group: 2},
             // ... continue for all addresses
         ];
 
         var links_data = [
             {source: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", target: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", value: 1},
-            {source: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", target: "19BquZVHaWK1gZ7TeUCmVTN5hDyPZDheJh", value: 1},
             // ... continue for all addresses
         ];
 
@@ -62,6 +65,14 @@
         node.append("title")
             .text(function(d) { return d.id; });
 
+        var labels = svg.append("g")
+            .attr("class", "labels")
+            .selectAll("text")
+            .data(nodes_data)
+            .enter().append("text")
+            .attr("class", "label")
+            .text(function(d) { return d.id; });
+
         simulation
             .nodes(nodes_data)
             .on("tick", ticked);
@@ -73,12 +84,16 @@
             link
                 .attr("x1", function(d) { return d.source.x; })
                 .attr("y1", function(d) { return d.source.y; })
-                .attr("x2", function(d) { return d.target.x; })
+                .attr("x2",                .attr("x2", function(d) { return d.target.x; })
                 .attr("y2", function(d) { return d.target.y; });
 
             node
                 .attr("cx", function(d) { return d.x; })
                 .attr("cy", function(d) { return d.y; });
+
+            labels
+                .attr("x", function(d) { return d.x; })
+                .attr("y", function(d) { return d.y; });
         }
 
         function dragstarted(d) {
@@ -100,3 +115,4 @@
     </script>
 </body>
 </html>
+
