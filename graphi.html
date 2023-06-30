@@ -17,21 +17,23 @@
 <body>
     <script>
         var nodes_data = [
-            {id: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", group: 1}, // the transaction
-            // list of addresses
-            {id: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", group: 2}, 
-            // ...add more nodes for each address
+            {id: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", group: 1},
+            {id: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", group: 2},
+            {id: "19BquZVHaWK1gZ7TeUCmVTN5hDyPZDheJh", group: 2},
+            // ... continue for all addresses
         ];
 
         var links_data = [
-            // list of links between the transaction and each address
             {source: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", target: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", value: 1},
-            // ...add more links for each address
+            {source: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", target: "19BquZVHaWK1gZ7TeUCmVTN5hDyPZDheJh", value: 1},
+            // ... continue for all addresses
         ];
 
         var svg = d3.select("body").append("svg")
             .attr("width", 960)
             .attr("height", 600);
+
+        var color = d3.scaleOrdinal(d3.schemeCategory10);
 
         var simulation = d3.forceSimulation()
             .force("link", d3.forceLink().id(function(d) { return d.id; }))
