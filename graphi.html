@@ -1,117 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <style>
-        .links line {
-            stroke: #999;
-            stroke-opacity: 0.6;
-        }
-
-        .nodes circle {
-            stroke: #fff;
-            stroke-width: 1.5px;
-        }
-
-        text {
-            font-family: sans-serif;
-            font-size: 10px;
-        }
-    </style>
-</head>
+<meta charset="utf-8">
 <body>
-    <script>
-        var nodes_data = [
-            {id: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", group: 1},
-            {id: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", group: 2},
-            // ... continue for all addresses
-        ];
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script>
 
-        var links_data = [
-            {source: "5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304", target: "3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd", value: 1},
-            // ... continue for all addresses
-        ];
+const nodes_data = [
+  {id: '5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304'},
+  // If you have more unique hashes, add them here as nodes
+];
 
-        var svg = d3.select("body").append("svg")
-            .attr("width", 960)
-            .attr("height", 600);
+const links_data = [
+  {source: '5b066f162d3508318bcff8d95c357bc13cf29044013173b99220b1d7cc8e2304', target: '3NU8JgMDSm5gpMh8Bgy4g9Q4S8uqZve1zd', value: 60000},
+  // Add your remaining rows here as links, following the same format
+];
 
-        var color = d3.scaleOrdinal(d3.schemeCategory10);
+const links = links_data.map(d => Object.create(d));
+const nodes = nodes_data.map(d => Object.create(d));
 
-        var simulation = d3.forceSimulation()
-            .force("link", d3.forceLink().id(function(d) { return d.id; }))
-            .force("charge", d3.forceManyBody())
-            .force("center", d3.forceCenter(svg.attr("width") / 2, svg.attr("height") / 2));
+const simulation = d3.forceSimulation(nodes)
+    .force("link", d3.forceLink(links).id(d => d.id))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter());
 
-        var link = svg.append("g")
-            .attr("class", "links")
-            .selectAll("line")
-            .data(links_data)
-            .enter().append("line")
-            .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+const svg = d3.create("svg")
+    .attr("viewBox", [-width / 2, -height / 2, width, height]);
 
-        var node = svg.append("g")
-            .attr("class", "nodes")
-            .selectAll("circle")
-            .data(nodes_data)
-            .enter().append("circle")
-            .attr("r", 5)
-            .attr("fill", function(d) { return color(d.group); })
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended));
+const link = svg.append("g")
+      .attr("stroke", "#999")
+      .attr("stroke-opacity", 0.6)
+    .selectAll("line")
+    .data(links)
+    .join("line")
+      .attr("stroke-width", d => Math.sqrt(d.value));
 
-        node.append("title")
-            .text(function(d) { return d.id; });
+const node = svg.append("g")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1.5)
+    .selectAll("circle")
+    .data(nodes)
+    .join("circle")
+      .attr("r", 5)
+      .attr("fill", color)
+      .call(drag(simulation));
 
-        var labels = svg.append("g")
-            .attr("class", "labels")
-            .selectAll("text")
-            .data(nodes_data)
-            .enter().append("text")
-            .attr("class", "label")
-            .text(function(d) { return d.id; });
+node.append("title")
+    .text(d => d.id);
 
-        simulation
-            .nodes(nodes_data)
-            .on("tick", ticked);
+simulation.on("tick", () => {
+  link
+      .attr("x1", d => d.source.x)
+      .attr("y1", d => d.source.y)
+      .attr("x2", d => d.target.x)
+      .attr("y2", d => d.target.y);
 
-        simulation.force("link")
-            .links(links_data);
+  node
+      .attr("cx", d => d.x)
+      .attr("cy", d => d.y);
+});
 
-        function ticked() {
-            link
-                .attr("x1", function(d) { return d.source.x; })
-                .attr("y1", function(d) { return d.source.y; })
-                .attr("x2", function(d) { return d.target.x; })
-                .attr("y2", function(d) { return d.target.y; });
+invalidation.then(() => simulation.stop());
 
-            node
-                .attr("cx", function(d) { return d.x; })
-                .attr("cy", function(d) { return d.y; });
+return svg.node();
 
-            labels
-                .attr("x", function(d) { return d.x; })
-                .attr("y", function (d) { return d.y; });
-        }
-
-        function dragstarted(d) {
-            if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-        }
-
-        function dragged(d) {
-            d.fx = d3.event.x;
-            d.fy = d3.event.y;
-        }
-
-        function dragended(d) {
-            if (!d3.event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-        }
-    </script>
+</script>
 </body>
-</html>
